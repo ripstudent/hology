@@ -11,22 +11,8 @@
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label">E-Mail</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
@@ -58,6 +44,43 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Nama Team</label>
+
+                            <div class="col-md-6">
+                                <input id="team" type="text" class="form-control" name="tea" value="{{ old('team') }}" required autofocus>
+
+                                @if ($errors->has('team'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('team') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('lomba') ? ' has-error' : '' }}">
+                            <label for="lomba" class="col-md-4 control-label">Kategori Lomba</label>
+
+                            <div class="col-md-6">
+                                <select class="form-control" id="lomba">
+                                    <option>Kategori Lomba</option>
+                                    <option>App Inovation</option>
+                                    <option>Business IT Case</option>
+                                    <option>Business Plan</option>
+                                    <option>Smart Device</option>
+                                    <option>Games</option>
+                                    <option>Capture The Flag</option>
+                                    <option>Programming</option>
+                                </select>
+
+                                @if ($errors->has('lomba'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('lomba') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 

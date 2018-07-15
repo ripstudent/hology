@@ -1,0 +1,66 @@
+p {
+    text-align: justify;
+}
+
+.header {
+    background-color: #05122b;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.body {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.judul {
+    padding-left: 2%; 
+    width: 98%;
+}
+
+.row {
+    background-color: #007CFE; 
+    color: white; 
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.288); 
+    height: 35px; 
+    border-radius: 13px; 
+    padding-left: 5px;
+}
+
+.col-sm-10 {
+    padding-top: 5px;
+}
+
+.col-sm-1 {
+    padding-left: 6%; 
+    padding-top: 3px;
+}
+
+#daftar {
+    background-color: #f93e27; 
+    color: white; 
+    height: 70%; 
+    line-height: 0.8;
+}
+
+.pemisah {
+    padding-bottom: 2%;
+}
+
+.isi {
+    border-radius: 13px; 
+    background-color: #f7f7f7; 
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.185); 
+    padding: 2%; 
+    border: 1px solid transparent;
+}
+
+#download {
+    border-color: #05122b; 
+    color: #f93e27;
+}
