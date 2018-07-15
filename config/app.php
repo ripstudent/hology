@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Hology'),
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -162,7 +162,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Laraveldaily\Quickadmin\QuickadminServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
@@ -171,12 +171,12 @@ return [
         /*
          * Application Service Providers...
          */
-        Hology\Providers\AppServiceProvider::class,
-        Hology\Providers\AuthServiceProvider::class,
-        // Hology\Providers\BroadcastServiceProvider::class,
-        Hology\Providers\EventServiceProvider::class,
-        Hology\Providers\RouteServiceProvider::class,
-
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
+        Laraveldaily\Quickadmin\QuickadminServiceProvider::class,
     ],
 
     /*

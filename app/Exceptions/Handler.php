@@ -1,6 +1,6 @@
 <?php
 
-namespace Hology\Exceptions;
+namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

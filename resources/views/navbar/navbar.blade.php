@@ -1,29 +1,39 @@
-<nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<header id="header">
+    <div class="container">
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Hology') }}
-                    </a>
-                </div>
+      <div id="logo" class="pull-left">
+        <a href="#hero">
+          <img src="{{ asset('homepage/img/logo.png') }}" alt="" title="" style="width:0%;height:0%;" /></img>
+        </a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active">
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#lomba">Lomba</a>
+          </li>
+          <li>
+              <a href="#pameran-produk">Pameran</a>
+            </li>
+          <li>
+            <a href="#seminar">Seminar</a>
+          </li>
+          <li>
+            <a href="#jadwal">Jadwal</a>
+          </li>
+          <li>
+            <a href="#berita">Berita</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -49,7 +59,11 @@
                                 </ul>
                             </li>
                         @endif
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
